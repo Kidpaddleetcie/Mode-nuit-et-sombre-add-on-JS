@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mode nuit + sombre Add-On JS</title>
+</head>
+<body>
+    <header>    
+        <h1>Mode nuit + sombre Add-On JS</h1>
+    </header>
+<p>
+    Lorsqu'on travail en soirée sur un site web ou qu'on est prit de fatigue, il est normal de vouloir avoir le moins possible de rayon bleu dans les yeux ! Ces rayons exitent la rétine plus que les autre rayons provenant des écrans donc le mieux est de limité les grandes zones contenant du bleu (et donc aussi le blanc qui est fait de la combinaison entre les trois couleurs de l'écrans RGB,rouge-vert-bleu !) !
+</p>
+
+<!-- Ce qu'il faut copier-coller sur votre site web !-->
+<style>
+
+#mns_n{
+        background-color: rgb(20, 20, 20);
+        color:rgb(255, 255, 96);
+        padding:5px;
+        box-shadow: rgb(192, 192, 192) 1px 1px 1px;
+        position:absolute;
+        top:0;
+        right:0;
+        text-align: center;
+        transition: all 0.2s;
+
+    }
+#mns_s{
+        background-color: rgb(31, 31, 31);
+        color:rgb(192, 192, 192);
+        padding:5px;
+        box-shadow: rgb(192, 192, 192) 1px 1px 1px;
+        position:absolute;
+        top:5%;
+        right:0;
+        text-align: center;
+transition: all 0.2s;
+    }
+#mns_n:hover{
+cursor:pointer;
+right:5px;
+box-shadow: rgb(0, 0, 0) 1px 1px 2px;
+
+    }
+#mns_s:hover{
+    right:5px;
+        cursor:pointer;
+        box-shadow: rgb(0, 0, 0) 1px 1px 2px;
+
+    }
+
+</style>
+    <div id="mns_n">Mode nuit ! </div>
+<div id="mns_s">Mode sombre ! </div>
+
+    <script src="mns.js"></script>
+    <!-- END-->
+</body>
+</html>
